@@ -17,15 +17,8 @@ See the [project documentation](https://docs.blockscout.com/) for instructions:
 - [Ansible deployment](https://docs.blockscout.com/for-developers/ansible-deployment)
 - [Manual deployment](https://docs.blockscout.com/for-developers/manual-deployment)
 - [ENV variables](https://docs.blockscout.com/for-developers/information-and-settings/env-variables)
-- [Configuration options](https://docs.blockscout.com/for-developers/configuration-options)
+  -- Check [example env_vars.env](https://github.com/Gauss-Gang/Gauss-Explorer/blob/master/example_env_vars.env) for the correct enviroment variables to start the explorer. Insert the correct information where ommitted.
 
-## Acknowledgements
-
-We would like to thank the [EthPrize foundation](http://ethprize.io/) for their funding support.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution and pull request protocol. We expect contributors to follow our [code of conduct](CODE_OF_CONDUCT.md) when submitting code or comments.
 
 ## License
 
