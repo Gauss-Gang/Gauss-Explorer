@@ -1,31 +1,13 @@
-<h1 align="center">BlockScout</h1>
-<p align="center">Blockchain Explorer for inspecting and analyzing EVM Chains.</p>
+<h1 align="center">Gauss Explorer</h1>
+<p align="center">Blockchain Explorer for inspecting and analyzing EVM Chains such as the Gauss Chain.</p>
 <div align="center">
 
-[![Blockscout](https://github.com/blockscout/blockscout/workflows/Blockscout/badge.svg?branch=master)](https://github.com/blockscout/blockscout/actions)
-[![](https://dcbadge.vercel.app/api/server/blockscout?style=flat)](https://discord.gg/blockscout)
 
 </div>
 
+This Explorer is based off the open-source blockchain explorer, Blockscout (See [docs](https://docs.blockscout.com/) for more information)
 
-BlockScout provides a comprehensive, easy-to-use interface for users to view, confirm, and inspect transactions on EVM (Ethereum Virtual Machine) blockchains. This includes the POA Network, Gnosis Chain, Ethereum Classic and other **Ethereum testnets, private networks and sidechains**.
-
-See our [project documentation](https://docs.blockscout.com/) for detailed information and setup instructions.
-
-For questions, comments and feature requests see the [discussions section](https://github.com/blockscout/blockscout/discussions).
-
-## About BlockScout
-
-BlockScout is an Elixir application that allows users to search transactions, view accounts and balances, and verify smart contracts on the Ethereum network including all forks and sidechains.
-
-Currently available full-featured block explorers (Etherscan, Etherchain, Blockchair) are closed systems which are not independently verifiable.  As Ethereum sidechains continue to proliferate in both private and public settings, transparent, open-source tools are needed to analyze and validate transactions.
-
-## Supported Projects
-
-BlockScout supports a number of projects. Hosted instances include POA Network, Gnosis Chain, Ethereum Classic, Sokol & Kovan testnets, and other EVM chains.
-
-- [List of hosted mainnets, testnets, and additional chains using BlockScout](https://docs.blockscout.com/for-projects/supported-projects)
-- [Hosted instance versions](https://docs.blockscout.com/about/use-cases/hosted-blockscout)
+The Gauss Explorer provides an easy-to-use interface for users to view, confirm, and inspect transactions on the Gauss Chain. 
 
 ## Getting Started
 
