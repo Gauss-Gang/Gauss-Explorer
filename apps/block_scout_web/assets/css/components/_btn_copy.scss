@@ -6,7 +6,7 @@ $btn-copy-small-dimensions: 22px !default;
   @include square-icon-button-inline($btn-copy-color, $btn-copy-dimensions);
   &.btn-copy-icon-no-borders {
     &:hover {
-      background-color: transparent;
+      background: transparent;
       path {
         fill: $btn-copy-color;
       }
@@ -24,7 +24,7 @@ $btn-copy-small-dimensions: 22px !default;
     @include square-icon-button-inline($btn-copy-color, $btn-copy-small-dimensions);
     &.btn-copy-icon-no-borders {
       &:hover {
-        background-color: transparent;
+        background: transparent;
         path {
           fill: $btn-copy-color;
         }

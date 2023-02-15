@@ -104,7 +104,7 @@ $footer-logo-width: auto !default;
       }
 
       &::before {
-        background-color: $footer-item-disc-color;
+        background: $footer-item-disc-color;
         border-radius: 50%;
         content: "";
         display: block;

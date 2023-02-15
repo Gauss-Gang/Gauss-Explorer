@@ -12,7 +12,7 @@ $tooltip-background-color: $btn-line-color !default;
 
 .tooltip-inversed-color {
     .tooltip-inner {
-        background-color: #fff !important;
+        background: #fff !important;
         color: #333 !important;
     }
 }
@@ -44,7 +44,7 @@ $tooltip-background-color: $btn-line-color !default;
 
 .tooltip-pale-color {
     .tooltip-inner {
-        background-color: rgba(#fff, 0.5) !important;
+        background: rgba(#fff, 0.5) !important;
         color: #333 !important;
     }
 }

@@ -6,7 +6,7 @@
 
 .icon-link {
   align-items: center;
-  background-color: $gray-200;
+  background: $gray-200;
   border-radius: 50%;
   border: none;
   color: $text-muted;
@@ -19,17 +19,17 @@
   width: 2rem;
 
   &:hover {
-    background-color: darken($primary, 20%);
+    background: darken($primary, 20%);
     color: $white;
     text-decoration: none;
   }
 
   &.icon-link-primary {
     color: $footer-text-color;
-    background-color: rgba($white, 0.25);
+    background: rgba($white, 0.25);
 
     &:hover {
-      background-color: $white;
+      background: $white;
       color: $primary;
     }
   }

@@ -14,7 +14,7 @@ $navbar-logo-height: auto !default;
 $navbar-logo-width: 100% !default;
 
 .navbar.navbar-primary {
-  background-color: $header-background-color;
+  background: $header-background-color;
   position: relative;
   z-index: 100;
 
@@ -39,7 +39,7 @@ $navbar-logo-width: 100% !default;
       transition: $transition-cont;
 
       &:before {
-        background-color: $header-icon-border-color-hover;
+        background: $header-icon-border-color-hover;
         border-radius: 0 0 4px 4px;
         content: "";
         display: block;
@@ -209,7 +209,7 @@ $navbar-logo-width: 100% !default;
       border-color: $secondary !important;
       border-radius: 5px;
       color: $secondary;
-      background-color: $header-textfield-background-color;
+      background: $header-textfield-background-color;
     }
   }
 }

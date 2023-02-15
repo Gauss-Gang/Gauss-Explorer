@@ -3,10 +3,11 @@ $dashboard-banner-gradient-end: lighten(
   $dashboard-banner-gradient-start,
   5%
 ) !default;
-$dashboard-banner-network-plain-container: lighten($dashboard-banner-gradient-end, 5%) !default;
+$dashboard-banner-network-plain-container-background-color: lighten($dashboard-banner-gradient-end, 5%) !default;
 $dashboard-line-color-price: lighten($dashboard-banner-gradient-end, 5%) !default;
 // $dashboard-line-color-price: lighten($dashboard-banner-gradient-end, 5%) !default; original ^
-$dashboard-line-color-price-dark-theme: #772149 !default;
+$dashboard-line-color-price-dark-theme: #772149 !default; // next time try deleting the !default
+// $dashboard-line-color-price-dark-theme: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !default; // next time try deleting the !default - original ^
 $dashboard-line-color-market: $secondary !default;
 // $dashboard-line-color-market: $secondary !default; - original ^
 $dashboard-line-color-market-dark-theme: #772149 !default;
@@ -205,7 +206,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
 .dashboard-banner-network-plain-container {
   align-items: center;
   align-self: flex-end;
-  background: $dashboard-banner-network-plain-container;
+  background: $dashboard-banner-network-plain-container-background-color;
   border-top-left-radius: 10px;
   display: flex;
   height: $dashboard-banner-network-plain-container-height;
@@ -237,7 +238,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   }
 
   &::after {
-    background: $dashboard-banner-network-plain-container;
+    background: $dashboard-banner-network-plain-container-background-color;
     bottom: 0;
     content: "";
     display: block;

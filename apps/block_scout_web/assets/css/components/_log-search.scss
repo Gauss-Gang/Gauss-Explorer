@@ -21,7 +21,7 @@
 
 .logs-search-input, .logs-search-btn, .logs-search-btn-cancel {
 	height: 24px;
-	background-color: #f5f6fa;
+	background: #f5f6fa;
 	border: 1px solid #f5f6fa;
 	color: #333;
 	border-radius: 2px;
@@ -50,7 +50,7 @@
 	transition: .1s ease-in;
 	cursor: pointer;
 	&:hover {
-		background-color: $primary;
+		background: $primary;
 		color: #fff;
 		border-color: $primary;
 	}

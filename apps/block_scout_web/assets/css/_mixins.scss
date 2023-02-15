@@ -14,7 +14,7 @@
 }
 
 @mixin gradient-container() {
-  background-color: $primary;
+  background: $primary;
   background-image: linear-gradient(
     to right,
     $dashboard-banner-gradient-start,
@@ -34,7 +34,7 @@
     position: relative;
 
     &::before {
-      background-color: $border-color;
+      background: $border-color;
       border-radius: 2px;
       content: "";
       height: 100%;
@@ -75,7 +75,7 @@
 @mixin btn-full($bg-color: $primary, $text-color: #fff) {
   -webkit-appearance: none !important;
   align-items: center;
-  background-color: $bg-color;
+  background: $bg-color;
   border-radius: 2px;
   border: 1px solid $bg-color;
   color: $text-color;
@@ -93,7 +93,7 @@
   width: fit-content;
 
   &:hover {
-    background-color: darken($bg-color, 10%);
+    background: darken($bg-color, 10%);
     border-color: darken($bg-color, 10%);
     color: $text-color;
     text-decoration: none;
@@ -114,7 +114,7 @@
   &[disabled] {
     &,
     &:hover {
-      background-color: $bg-color;
+      background: $bg-color;
       border-color: $bg-color;
       cursor: default;
       opacity: 0.5;
@@ -129,7 +129,7 @@
 @mixin btn-line($bg-color: #fff, $text-color: $secondary, $font-size: 12px) {
   -webkit-appearance: none !important;
   align-items: center;
-  background-color: $bg-color;
+  background: $bg-color;
   border-radius: 2px;
   border: 1px solid $text-color;
   color: $text-color;
@@ -148,7 +148,7 @@
   font-weight: 400;
 
   &:hover {
-    background-color: $text-color;
+    background: $text-color;
     color: $bg-color;
     text-decoration: none;
 
@@ -173,7 +173,7 @@
   &[disabled] {
     &,
     &:hover {
-      background-color: $bg-color!important;
+      background: $bg-color!important;
       border-color: $primary!important;
       color: $primary!important;
       cursor: default;
@@ -205,7 +205,7 @@
   }
 
   &:hover {
-    background-color: $color;
+    background: $color;
 
     path {
       fill: #fff;
@@ -233,7 +233,7 @@
   }
 
   &:hover {
-    background-color: $color;
+    background: $color;
 
     path {
       fill: #fff;

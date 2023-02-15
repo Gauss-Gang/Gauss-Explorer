@@ -348,7 +348,7 @@
 
 .dropzone-1 .dz-preview .dz-details .dz-filename:hover span {
 	border: 1px solid rgba(200, 200, 200, 0.8);
-	background-color: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .dropzone-1 .dz-preview .dz-details .dz-filename:not(:hover) {
@@ -362,7 +362,7 @@
 
 .dropzone-1 .dz-preview .dz-details .dz-filename span,
 .dropzone-1 .dz-preview .dz-details .dz-size span {
-	background-color: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.4);
 	padding: 0 0.4em;
 	border-radius: 3px;
 }
