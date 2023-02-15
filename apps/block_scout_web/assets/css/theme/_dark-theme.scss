@@ -1,8 +1,8 @@
-$body-dark: linear-gradient(135deg, #b21f1f 0%, #a32355 50%, #93278f 100%); // body background
-$dark-bg: linear-gradient(45deg, #b21f1f 0%, #a32355 50%, #93278f 100%); // hero shade
-$dark-light-bg: #550052;
-$dark-primary: #a32355; // primary color
-$dark-light: #c94d4d; // tile light top share
+$body-dark: #18181c; // body background
+$dark-bg: #1D1d30; // hero shade
+$dark-light-bg: #371b49;
+$dark-primary: #772149; // primary color
+$dark-light: #3c2e58; // tile light top share
 $labels-dark: #ffffff; // header nav, labels
 $dark-stakes-banned-background: #ffffff;
 
@@ -77,8 +77,8 @@ $dark-stakes-banned-background: #ffffff;
 		}
 	}
 	.navbar.navbar-primary .form-control {
-		background: $dark-light-bg;
-		border-color: $dark-light-bg;
+		background: $dark-primary;
+		border-color: $dark-primary;
 		color: #fff;
 		&::placeholder {
 			color: $labels-dark;
@@ -90,7 +90,7 @@ $dark-stakes-banned-background: #ffffff;
 
 	// footer
 	.footer {
-		background: $dark-light-bg;
+		background: $dark-bg;
 		color: $labels-dark;
 	}
 	.footer-social-icon,
@@ -120,30 +120,30 @@ $dark-stakes-banned-background: #ffffff;
 		color: $labels-dark;
 	}
 	.dashboard-banner-network-stats-item::before {
-		background: $dark-secondary;
+		background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
 	}
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-item {
 		&.price-per-day {
 			&::before {
-			  background: $dark-primary;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
 			}
 		  }
 	  
 		  &.gas-price-oracle {
 			&::before {
-			  background: $dark-primary;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
 			}
 		  }
 	  
 		  &.market-cap-per-day {
 			&::before {
-			  background:$dark-secondary;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);;
 			}
 		  }
 	  
 		  &.tx-per-day {
 			&::before {
-			  background: $dashboard-line-color-transactions;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);;
 			}
 		  }
 	}
@@ -528,7 +528,7 @@ $dark-stakes-banned-background: #ffffff;
 	// Contract Verification
 	.new-smart-contract-container {
 		background: $dark-light-bg;
-		background-image: linear-gradient(to bottom right, #b21f1f 100%, #b21f1f 100%);
+		background-image: linear-gradient(to bottom right, #772149 100%, #772149 100%);
 		@media (max-width: 991.98px) {
 			background-image: none;
 		}
@@ -627,7 +627,7 @@ $dark-stakes-banned-background: #ffffff;
 	.tile-loader, .table-content-loader {
 		background: $dark-bg !important;
 		&:before {
-			background: linear-gradient(to right, #93278f 2%, lighten(#93278f, 3) 18%, #93278f 33%);
+			background: linear-gradient(to right, #1d1d30 2%, lighten(#1d1d30, 3) 18%, #1d1d30 33%);
 		}
 	}
 
@@ -1060,17 +1060,17 @@ $dark-stakes-banned-background: #ffffff;
 		  }
 	}
 	.main-search-autocomplete {
-		background: $dark-light-bg !important;
+		background: $dark-primary !important;
 		color: #fff !important;
 	}
 	.autocomplete-category {
 		color: #fff !important;
 	}
 	ul[id^='autoComplete_list_'] {
-		background: $dark-light-bg !important;
+		background: $dark-primary !important;
 	}
 	li[id^='autoComplete_result_'] {
-		background: $dark-light-bg !important;
+		background: $dark-primary !important;
 		color: #fff !important;
 
 		&:hover {

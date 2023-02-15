@@ -53,10 +53,10 @@ input.profile-item {
 
 .acc-link-active { 
   &:hover, &:focus {
-    background-color: $primary !important;
+    background: $primary !important;
     color: #fff !important;  
   }
-  background-color: $primary;
+  background: $primary;
   color: #fff;
 }
 
