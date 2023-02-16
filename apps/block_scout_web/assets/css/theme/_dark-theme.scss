@@ -50,6 +50,7 @@ $dark-stakes-banned-background: #ffffff;
 			&.border {
 				background: $dark-light-bg;
 			}
+			color: #ffffff !important;
 		}
 		.nav-submenu {
 			color: $labels-dark;
@@ -86,6 +87,24 @@ $dark-stakes-banned-background: #ffffff;
 	}
 	.navbar.navbar-primary .navbar-toggler .navbar-toggler-icon {
 		filter: invert(1);
+	}
+	.navbar.navbar-primary .input-group-append * {
+		fill: #ffffff !important;
+	}
+	.main-search-autocomplete, .main-search-autocomplete-mobile {
+		font-size: 14px !important;
+		color: #ffffff !important;
+	}
+	.search-control {
+		@media screen and (min-width: 992px) {
+			height: 57px !important;
+		}
+		@media screen and (max-width: 992px) {
+			height: 33px !important;
+		}
+		&.focused-field {
+		  border: 1px solid $dark-light-bg !important;
+		}
 	}
 
 	// footer
@@ -595,6 +614,7 @@ $dark-stakes-banned-background: #ffffff;
 	.input-group:not(.input-status-error) .form-control:focus ~ .input-group-prepend.last {
 		.input-group-text {
 		  border-color: $dark-primary;
+		  color: #fff
 		}
 	}
 
@@ -1062,6 +1082,9 @@ $dark-stakes-banned-background: #ffffff;
 	.main-search-autocomplete {
 		background: $dark-primary !important;
 		color: #fff !important;
+		&::placeholder{
+			color: #fff !important;
+		}
 	}
 	.autocomplete-category {
 		color: #fff !important;
@@ -1082,8 +1105,9 @@ $dark-stakes-banned-background: #ffffff;
 	}
 }
 
+
 .navbar-dark .navbar-toggler {
-	color: rgba(255, 255, 255, 0.5);
+	color: #ffffff80;
 	border: none;
 }
 
