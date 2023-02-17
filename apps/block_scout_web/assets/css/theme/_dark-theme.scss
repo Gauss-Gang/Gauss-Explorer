@@ -56,9 +56,6 @@ $dark-stakes-banned-background: #ffffff;
 			color: $labels-dark;
 		}
 	}
-	.navbar-brand .navbar-logo {
-		filter: brightness(0) invert(1);
-	}
 	.navbar.navbar-primary .navbar-nav .nav-link {
 		color: $labels-dark;
 		.nav-link-icon {
@@ -85,9 +82,9 @@ $dark-stakes-banned-background: #ffffff;
 			color: $labels-dark;
 		}
 	}
-	.navbar.navbar-primary .navbar-toggler .navbar-toggler-icon {
-		filter: invert(1);
-	}
+	// .navbar.navbar-primary .navbar-toggler .navbar-toggler-icon {
+	// 	filter: invert(1);
+	// }
 	.navbar.navbar-primary .input-group-append * {
 		fill: #ffffff !important;
 	}
@@ -125,7 +122,62 @@ $dark-stakes-banned-background: #ffffff;
 	}
 
 	// hero stats
-
+	// .dashboard-banner-chart-legend-item {
+	// 	padding-bottom: 3px;
+	// 	padding-left: 12px;
+	// 	padding-top: 3px;
+	// 	position: relative;
+	// 	padding-right: 12px;
+	
+	// 	@include media-breakpoint-down(md) {
+	// 	  display: flex;
+	// 	  flex-direction: row;
+	// 	}
+	
+	// 	@include media-breakpoint-down(sm) {
+	// 	  margin-top: 10px;
+	// 	}
+	
+	// 	@media (max-width: 599px) {
+	// 	  padding-top: 0;
+	// 	  padding-bottom: 0;
+	// 	  flex-direction: column;
+	// 	}
+	
+	// 	&::before {
+	// 	  border-radius: 2px;
+	// 	  content: "";
+	// 	  height: 100%;
+	// 	  left: 0;
+	// 	  position: absolute;
+	// 	  top: 0;
+	// 	  width: 4px;
+	// 	}
+	
+	// 	&.price-per-day {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	
+	// 	&.gas-price-oracle {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	
+	// 	&.market-cap-per-day {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	
+	// 	&.tx-per-day {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	// }
 	.layout-container .dashboard-banner-container {
 		background-image: none;
 		background: $dark-bg !important;
@@ -164,7 +216,7 @@ $dark-stakes-banned-background: #ffffff;
 			&::before {
 			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
 			}
-		  }
+		}
 	}
 
 	// main container, layout, cards
