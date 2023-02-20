@@ -12,7 +12,7 @@ $dashboard-line-color-price-dark-theme: #b21f1f; // next time try deleting the !
 $dashboard-line-color-market: $secondary !default;
 // $dashboard-line-color-market: $secondary !default; - original ^
 $dashboard-line-color-market-dark-theme: #b21f1f;
-$dashboard-line-color-transactions: red !default;
+$dashboard-line-color-transactions: #ff0000 !default;
 // $dashboard-line-color-transactions: $warning !default; - original ^
 $dashboard-line-color-transactions-dark-theme: #b21f1f;
 // $dashboard-line-color-transactions-dark-theme: #772149 !default; - original ^
@@ -128,6 +128,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
     }
 
     &::before {
+      background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%) !important;
       border-radius: 2px;
       content: "";
       height: 100%;
@@ -139,28 +140,29 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
 
     &.price-per-day {
       &::before {
-        background: $dashboard-line-color-price;
+        background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%);
       }
     }
 
     &.gas-price-oracle {
       &::before {
-        background: $dashboard-line-color-price;
+        background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%);
       }
     }
 
     &.market-cap-per-day {
       &::before {
-        background: $dashboard-line-color-market;
+        background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%);
       }
     }
 
     &.tx-per-day {
       &::before {
-        background: $dashboard-line-color-transactions;
+        background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%);
       }
     }
   }
+
 
   .dashboard-banner-chart-legend-label {
     color: $dashboard-banner-chart-legend-label-color;
@@ -285,6 +287,9 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
       padding-left: calc(0.6rem + 4px);
       padding-right: 0.5rem;
     }
+  }
+  .dashboard-banner-network-stats-item:before {
+    background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%);
   }
 
   .dashboard-banner-network-stats-value {
