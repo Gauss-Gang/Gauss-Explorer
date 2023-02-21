@@ -56,6 +56,11 @@ $dark-stakes-banned-background: #ffffff;
 			color: $labels-dark;
 		}
 	}
+	.testnet-label {
+		background: transparent;
+		//border: 1px solid #828ba0;
+		color: #ffffff;
+	}
 	.navbar.navbar-primary .navbar-nav .nav-link {
 		color: $labels-dark;
 		.nav-link-icon {
@@ -191,30 +196,30 @@ $dark-stakes-banned-background: #ffffff;
 		color: $labels-dark;
 	}
 	.dashboard-banner-network-stats-item::before {
-		background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+		background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 	}
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-item {
 		&.price-per-day {
 			&::before {
-			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		  }
 	  
 		  &.gas-price-oracle {
 			&::before {
-			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		  }
 	  
 		  &.market-cap-per-day {
 			&::before {
-			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		  }
 	  
 		  &.tx-per-day {
 			&::before {
-			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		}
 	}

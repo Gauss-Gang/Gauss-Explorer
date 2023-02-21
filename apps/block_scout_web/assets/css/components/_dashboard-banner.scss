@@ -6,15 +6,15 @@ $dashboard-banner-gradient-end: lighten(
 $dashboard-banner-network-plain-container-background-color: lighten($dashboard-banner-gradient-end, 5%) !default;
 $dashboard-line-color-price: lighten($dashboard-banner-gradient-end, 5%) !default;
 // $dashboard-line-color-price: lighten($dashboard-banner-gradient-end, 5%) !default; original ^
-$dashboard-line-color-price-dark-theme: #b21f1f; // next time try deleting the !default
+$dashboard-line-color-price-dark-theme: #371b49; // next time try deleting the !default
 
 // $dashboard-line-color-price-dark-theme: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !default; // next time try deleting the !default - original ^
 $dashboard-line-color-market: $secondary !default;
 // $dashboard-line-color-market: $secondary !default; - original ^
-$dashboard-line-color-market-dark-theme: #b21f1f;
-$dashboard-line-color-transactions: #ff0000 !default;
+$dashboard-line-color-market-dark-theme: #371b49;
+$dashboard-line-color-transactions: #bd3838 !default;
 // $dashboard-line-color-transactions: $warning !default; - original ^
-$dashboard-line-color-transactions-dark-theme: #b21f1f;
+$dashboard-line-color-transactions-dark-theme: #371b49;
 // $dashboard-line-color-transactions-dark-theme: #772149 !default; - original ^
 $dashboard-stats-item-label-color: #fff !default;
 $dashboard-stats-item-value-color: rgba(#fff, 0.8) !default;
@@ -128,7 +128,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
     }
 
     &::before {
-      background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%) !important;
+      background: linear-gradient(180deg, #fdbb2d 0%, #d96f26 50%, #b21f1f 100%);
       border-radius: 2px;
       content: "";
       height: 100%;
