@@ -1,11 +1,11 @@
 // general
-$primary: #d96f26;
-$secondary: #bd3838;
+$primary: #371b49;
+$secondary: #3c2e58;
 $tertiary: #ffae00;
 $additional-font: #fff;
 
 // footer
-$footer-background-color: #d96f26;
+$footer-background-color: #371b49;
 $footer-title-color: #fff;
 $footer-text-color: #fff;
 $footer-item-disc-color: $secondary;
@@ -25,7 +25,7 @@ $dashboard-banner-gradient-start: $primary; // gradient begin
 
 $dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: #b21f1f; // stats bg
+$dashboard-banner-network-plain-container-background-color: #3c2e58; // stats bg
 
 
 // navigation
@@ -41,6 +41,42 @@ $btn-line-color: $primary; // button border and font color && hover bg color
 $btn-copy-color: $primary; // btn copy
 $btn-qr-color: $primary; // btn qr-code
 $btn-address-card-icon-color: $primary; // btn address color
+.btn-line {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-appearance: none!important;
+    background: #fff !important;
+    border: 1px solid #d96f26 !important;
+    border-radius: 2px;
+    color: #d96f26 !important;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    font-weight: 400;
+    height: 36px;
+    justify-content: center;
+    outline: none;
+    padding: 0 15px;
+    text-decoration: none;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.btn-line:hover {
+	color: #fff !important;
+	background: #d96f26 !important;
+	border: 1px solid #d96f26 !important;
+}
 
 //links & tile
 $tile-body-a-color: $primary;

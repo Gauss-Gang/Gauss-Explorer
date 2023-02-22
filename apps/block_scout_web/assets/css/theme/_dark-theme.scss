@@ -341,13 +341,13 @@ $dark-stakes-banned-background: #ffffff;
 	// btns
 
 	.btn-line {
-		background: transparent;
-		border-color: $dark-primary;
-		color: $dark-primary;
+		background: transparent !important;
+		border-color: $dark-primary !important;
+		color: $dark-primary !important;
 		&:hover {
-			border-color: $dark-primary;
-			background: $dark-primary;
-			color: #fff;
+			border-color: $dark-primary !important;
+			background: $dark-primary !important;
+			color: #fff !important;
 		}
 	}
 
