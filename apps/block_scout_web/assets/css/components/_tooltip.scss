@@ -6,7 +6,7 @@ $tooltip-color: #fff !default;
   min-width: 100px;
 
   .tooltip-inner {
-    background-color: $tooltip-background-color;
+    background: $tooltip-background-color;
     border-radius: 5px;
     color: $tooltip-color;
     padding: 15px;

@@ -8,16 +8,16 @@
     vertical-align: baseline;
 
     &--pending {
-      background-color: $gray-500;
+      background: $gray-500;
     }
     &--success {
-      background-color: $success;
+      background: $success;
     }
     &--failed {
-      background-color: $danger;
+      background: $danger;
     }
     &--out_of_gas {
-      background-color: $warning;
+      background: $warning;
     }
   }
 }

@@ -44,7 +44,7 @@ $tile-body-a-color: #5959d8 !default;
     }
 
     .tile-transaction-type-block {
-      background-color: rgba($color, 0.1);
+      background: rgba($color, 0.1);
       border-bottom: 1px solid $color;
       border-right: 1px solid $color;
       border-top: 1px solid $color;
@@ -117,7 +117,7 @@ $tile-body-a-color: #5959d8 !default;
 }
 
 .tile-bottom-contents {
-  background-color: #f6f7f9;
+  background: #f6f7f9;
   font-size: 12px;
   line-height: 1.2;
   padding: 0.8rem 1rem;
@@ -141,7 +141,7 @@ $tile-body-a-color: #5959d8 !default;
 }
 
 .tile-muted {
-  background-color: $gray-100;
+  background: $gray-100;
   border-left: 1px solid $border-color;
   box-shadow: none;
 }
@@ -323,7 +323,7 @@ $tile-body-a-color: #5959d8 !default;
   }
 
   &.tile-type-api-documentation {
-    background-color: transparent;
+    background: transparent;
     cursor: pointer;
     padding: 15px;
     text-align: left;
@@ -332,14 +332,14 @@ $tile-body-a-color: #5959d8 !default;
 
   /* Progress bar */
   .progress {
-    background-color: #f5f6fa;
+    background: #f5f6fa;
     border-radius: 2px;
     height: 4px;
     margin-top: 8px;
     width: 120px;
 
     .progress-bar {
-      background-color: $tile-type-progress-bar-color;
+      background: $tile-type-progress-bar-color;
       border-radius: 2px;
     }
   }
@@ -367,7 +367,7 @@ $tile-body-a-color: #5959d8 !default;
 
 // Loader
 .tile-type-loading {
-  background-color: #fff;
+  background: #fff;
   padding-top: 30px;
   padding-bottom: 28px;
 }
@@ -377,7 +377,7 @@ $tile-body-a-color: #5959d8 !default;
   height: 20px;
   width: 100%;
   border-radius: 4px;
-  background-color: #f5f6fa;
+  background: #f5f6fa;
   overflow: hidden;
   position: relative;
   &:before {
@@ -441,7 +441,7 @@ $tile-body-a-color: #5959d8 !default;
     left: -4px;
     width: calc(100% + 5px);
     height: calc(100% + 2px);
-    background-color: #F6F7F9;
+    background: #F6F7F9;
     border-radius: 4px;
     overflow: hidden;
     transition: .24s ease-out;
@@ -455,7 +455,7 @@ $tile-body-a-color: #5959d8 !default;
       left: 0;
       height: calc(100% + 2px);
       width: 4px;
-      background-color: $tile-type-block-color;
+      background: $tile-type-block-color;
       transform: scaleY(0);
       transform-origin: center bottom;
       animation: blockLoaderLine 2s linear forwards;
@@ -468,7 +468,7 @@ $tile-body-a-color: #5959d8 !default;
       left: 0;
       bottom: 0;
       width: 1px;
-      background-color: #dee2e6;
+      background: #dee2e6;
     }
   }
 }
@@ -579,13 +579,13 @@ $cube-quantity: 5;
 .dark-block-loader {
   width: auto;
   height: 15px;
-  background-color: #e2e5ec;
+  background: #e2e5ec;
   margin-bottom: 5px;
   border-radius: 4px;
 }
 
 .dark-theme-applied .dark-block-loader {
-  background-color: #313355;
+  background: #313355;
 }
 
 .title-with-label {

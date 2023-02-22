@@ -22,19 +22,19 @@ $modal-status-graph-question: #329ae9 !default;
   justify-content: center;
 
   &-error {
-    background-color: $modal-status-graph-error;
+    background: $modal-status-graph-error;
   }
 
   &-warning {
-    background-color: $modal-status-graph-warning;
+    background: $modal-status-graph-warning;
   }
 
   &-success {
-    background-color: $modal-status-graph-success;
+    background: $modal-status-graph-success;
   }
 
   &-question {
-    background-color: $modal-status-graph-question;
+    background: $modal-status-graph-question;
   }
 
   svg {
@@ -92,7 +92,7 @@ $modal-status-graph-question: #329ae9 !default;
     color: $primary;
 
     &:hover {
-      background-color: $primary;
+      background: $primary;
       color: $additional-font;
     }
 

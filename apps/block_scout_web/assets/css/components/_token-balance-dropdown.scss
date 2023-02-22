@@ -1,7 +1,7 @@
 .token-balance-dropdown {
   min-width: 10rem;
   margin-top: 1rem;
-  background-color: #fff;
+  background: #fff;
 
   &.dropdown-menu {
     border-radius: 4px !important;
@@ -35,7 +35,7 @@
   .dropdown-search-field {
     height: 50px;
     border: 1px solid #f5f6fa;
-    background-color: #f5f6fa;
+    background: #f5f6fa;
     outline: none !important;
     font-size: 14px;
     color: #828ba0;

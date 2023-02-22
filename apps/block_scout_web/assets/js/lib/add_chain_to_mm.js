@@ -24,15 +24,15 @@ export async function addChainToMM ({ btn }) {
       await window.ethereum.request({
         method: 'wallet_addEthereumChain',
         params: [{
-          chainId: chainIDFromInstance,
-          chainName: subNetwork,
+          chainId: '0x1092',
+          chainName: 'Gauss Induction Labs', 
           nativeCurrency: {
-            name: coinName,
-            symbol: coinName,
+            name: 'GANG',
+            symbol: 'GANG',
             decimals: 18
           },
-          rpcUrls: [jsonRPC],
-          blockExplorerUrls: [blockscoutURL]
+          rpcUrls: ['https://rpc.giltestnet.com'],
+          blockExplorerUrls: ['https://explorer.giltestnet.com']
         }]
       })
     } else {

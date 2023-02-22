@@ -10,7 +10,7 @@ $btn-line-color: $secondary !default;
 }
 
 .btn-line-inversed:hover {
-  background-color: $btn-line-color;
+  background: $btn-line-color;
   color: $btn-line-bg;
   text-decoration: none;
 }

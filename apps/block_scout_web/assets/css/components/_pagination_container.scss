@@ -4,7 +4,7 @@ $pagination-page-link-background-active: $primary !default;
 $pagination-page-link-color-active: #fff !default;
 
 @mixin pagination-container-base($background-color, $text-color) {
-  background-color: $background-color;
+  background: $background-color;
   border: 1px solid $background-color;
   color: $text-color;
 
@@ -117,7 +117,7 @@ $pagination-page-link-color-active: #fff !default;
     .page-link-light-hover {
       &:not(.no-hover):hover {
         @include pagination-container-base($pagination-page-link-background-active, $pagination-page-link-color-active);
-        background-color: rgba($pagination-page-link-background-active, 0.5);
+        background: rgba($pagination-page-link-background-active, 0.5);
         border-color: rgba($pagination-page-link-background-active, 0.5);
       }
     }
@@ -125,7 +125,7 @@ $pagination-page-link-color-active: #fff !default;
 }
 
 .tb {
-  background-color: #00000000 !important;
+  background: #00000000 !important;
   border: none !important;
 }
 
@@ -169,7 +169,7 @@ $pagination-page-link-color-active: #fff !default;
 }
 
 .page-number {
-  background-color: $pagination-page-link-background;
+  background: $pagination-page-link-background;
   border-width: 1px;
   border-style: solid;
   border-radius: 2px;

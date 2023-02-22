@@ -14,7 +14,7 @@ $radio-big-dimensions: 30px !default;
     z-index: 5;
 
     &:checked + .radio-icon::before {
-      background-color: $radio-big-color;
+      background: $radio-big-color;
       border-radius: 50%;
       content: "";
       height: 12px;

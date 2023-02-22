@@ -46,7 +46,7 @@ $dropdown-menu-item-hover-background: rgba($secondary, 0.1) !default;
     &.active,
     &:hover,
     &:focus {
-      background-color: $dropdown-menu-item-hover-background;
+      background: $dropdown-menu-item-hover-background;
       color: $dropdown-menu-item-hover-color;
 
       .external-link-icon {
@@ -72,7 +72,7 @@ $dropdown-menu-item-hover-background: rgba($secondary, 0.1) !default;
     &:hover,
     &:active {
       padding-left: 10px;
-      background-color: #fff !important;
+      background: #fff !important;
       cursor: default;
       color: #333;
       font-weight: 700;

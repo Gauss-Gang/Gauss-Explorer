@@ -9,7 +9,7 @@ $card-tab-icon-color: #20b760 !default;
 $card-tab-icon-color-active: #fff !default;
 
 .card {
-  background-color: $card-background-color;
+  background: $card-background-color;
   border-radius: $card-default-border-radius;
   border: none;
   box-shadow: 0 0 30px 0 rgba(202, 199, 226, 0.5);
@@ -32,7 +32,7 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-background-1 {
-  background-color: $card-background-1;
+  background: $card-background-1;
   color: $card-background-1-text-color;
   a:not(.dropdown-item),
   a:not(.dropdown-item):hover {
@@ -203,7 +203,7 @@ $card-tab-icon-color-active: #fff !default;
 
 .card-tab {
   align-items: center;
-  background-color: $card-background-color;
+  background: $card-background-color;
   color: #333;
   cursor: pointer;
   display: flex;
@@ -215,7 +215,7 @@ $card-tab-icon-color-active: #fff !default;
   transition: $transition-cont;
 
   &:hover {
-    background-color: rgba($card-tab-active, .15);
+    background: rgba($card-tab-active, .15);
     color: $card-tab-active;
     text-decoration: none;
   }
@@ -231,7 +231,7 @@ $card-tab-icon-color-active: #fff !default;
   }
 
   &.active {
-    background-color: $card-tab-active;
+    background: $card-tab-active;
     color: #fff;
     cursor: default;
     text-decoration: none;
@@ -343,5 +343,5 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .nav-pills .nav-link.active {
-  background-color: $primary;
+  background: $primary;
 }

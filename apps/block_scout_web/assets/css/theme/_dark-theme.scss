@@ -1,9 +1,17 @@
-$body-dark: #1c1d31; // body background
-$dark-bg: #22223a; // hero shade
-$dark-light-bg: #282945; // pills bg shade
-$dark-light: #313355; // tile light top share
-$labels-dark: #8a8dba; // header nav, labels
-$dark-stakes-banned-background: #3e314c;
+$body-dark: #18181c; // body background
+$dark-bg: #1D1d30; // hero shade
+$dark-light-bg: #371b49;
+$dark-primary: #772149; // primary color
+$dark-light: #3c2e58; // tile light top share
+$labels-dark: #ffffff; // header nav, labels
+$dark-stakes-banned-background: #ffffff;
+
+// $body-dark: #54174f; // body background
+// $dark-bg: #612c5c; // hero shade
+// $dark-light-bg: #282945; // pills bg shade
+// $dark-light: #313355; // tile light top share
+// $labels-dark: #8a8dba; // header nav, labels
+// $dark-stakes-banned-background: #3e314c;
 
 // Switcher
 .dark-mode-changer {
@@ -37,18 +45,21 @@ $dark-stakes-banned-background: #3e314c;
 
 	// navbar
 	.navbar.navbar-primary {
-		background-color: $dark-light-bg;
+		background: $dark-light-bg;
 		.input-group-text {
 			&.border {
-				background-color: $dark-light-bg;
+				background: $dark-light-bg;
 			}
+			color: #ffffff !important;
 		}
 		.nav-submenu {
 			color: $labels-dark;
 		}
 	}
-	.navbar-brand .navbar-logo {
-		filter: brightness(0) invert(1);
+	.testnet-label {
+		background: transparent;
+		//border: 1px solid #828ba0;
+		color: #ffffff;
 	}
 	.navbar.navbar-primary .navbar-nav .nav-link {
 		color: $labels-dark;
@@ -64,13 +75,13 @@ $dark-stakes-banned-background: #3e314c;
 				}
 			}
 			&:before {
-				background-color: $dark-primary;
+				background: $dark-primary;
 			}
 		}
 	}
 	.navbar.navbar-primary .form-control {
-		background-color: $dark-bg;
-		border-color: $dark-bg;
+		background: $dark-primary;
+		border-color: $dark-primary;
 		color: #fff;
 		&::placeholder {
 			color: $labels-dark;
@@ -79,10 +90,28 @@ $dark-stakes-banned-background: #3e314c;
 	.navbar.navbar-primary .navbar-toggler .navbar-toggler-icon {
 		filter: invert(1);
 	}
+	.navbar.navbar-primary .input-group-append * {
+		fill: #ffffff !important;
+	}
+	.main-search-autocomplete, .main-search-autocomplete-mobile {
+		font-size: 14px !important;
+		color: #ffffff !important;
+	}
+	.search-control {
+		@media screen and (min-width: 992px) {
+			height: 57px !important;
+		}
+		@media screen and (max-width: 992px) {
+			height: 33px !important;
+		}
+		&.focused-field {
+		  border: 1px solid $dark-light-bg !important;
+		}
+	}
 
 	// footer
 	.footer {
-		background: $dark-light-bg;
+		background: $dark-bg;
 		color: $labels-dark;
 	}
 	.footer-social-icon,
@@ -94,59 +123,117 @@ $dark-stakes-banned-background: #3e314c;
 		color: #fff;
 	}
 	.footer-list ul li::before {
-		background-color: $dark-secondary;
+		background: $dark-secondary;
 	}
 
 	// hero stats
-
+	// .dashboard-banner-chart-legend-item {
+	// 	padding-bottom: 3px;
+	// 	padding-left: 12px;
+	// 	padding-top: 3px;
+	// 	position: relative;
+	// 	padding-right: 12px;
+	
+	// 	@include media-breakpoint-down(md) {
+	// 	  display: flex;
+	// 	  flex-direction: row;
+	// 	}
+	
+	// 	@include media-breakpoint-down(sm) {
+	// 	  margin-top: 10px;
+	// 	}
+	
+	// 	@media (max-width: 599px) {
+	// 	  padding-top: 0;
+	// 	  padding-bottom: 0;
+	// 	  flex-direction: column;
+	// 	}
+	
+	// 	&::before {
+	// 	  border-radius: 2px;
+	// 	  content: "";
+	// 	  height: 100%;
+	// 	  left: 0;
+	// 	  position: absolute;
+	// 	  top: 0;
+	// 	  width: 4px;
+	// 	}
+	
+	// 	&.price-per-day {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	
+	// 	&.gas-price-oracle {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	
+	// 	&.market-cap-per-day {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	
+	// 	&.tx-per-day {
+	// 	  &::before {
+	// 		background: linear-gradient(90deg, #b21f1f 0%, #a32355 50%, #93278f 100%);
+	// 	  }
+	// 	}
+	// }
 	.layout-container .dashboard-banner-container {
 		background-image: none;
-		background-color: $dark-bg !important;
+		background: $dark-bg !important;
 	}
 	.dashboard-banner-network-plain-container,
 	.dashboard-banner-network-plain-container::after {
-		background-color: $dark-light-bg;
+		background: $dark-light-bg;
 	}
 	.dashboard-banner-network-stats-label,
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-label {
 		color: $labels-dark;
 	}
 	.dashboard-banner-network-stats-item::before {
-		background-color: $dark-secondary;
+		background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 	}
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-item {
 		&.price-per-day {
 			&::before {
-			  background-color: $dark-primary;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		  }
 	  
 		  &.gas-price-oracle {
 			&::before {
-			  background-color: $dark-primary;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		  }
 	  
 		  &.market-cap-per-day {
 			&::before {
-			  background-color:$dark-secondary;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
 		  }
 	  
 		  &.tx-per-day {
 			&::before {
-			  background-color: $dashboard-line-color-transactions;
+			  background: linear-gradient(180deg, #b21f1f 0%, #a32355 50%, #93278f 100%) !important;
 			}
-		  }
+		}
 	}
 
 	// main container, layout, cards
 	.layout-container main {
-		background-color: $body-dark;
+		background: $body-dark;
+		// background-image: url("../images/NobleSwapBackground.png");
+		// background-color: #0d3393;
+		// original - background-color: $body-dark;
 	}
 
 	.card {
-		background-color: $dark-light-bg;
+		background: $dark-light-bg;
 		box-shadow: 0 0 30px 0 rgba(23, 24, 41, 0.5);
 	}
 
@@ -163,19 +250,19 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.card-tab {
-		background-color: transparent;
+		background: transparent;
 		&:hover:not(.active) {
-			background-color: rgba($dark-primary, .15);
+			background: rgba($dark-primary, .15);
 			color: $dark-primary;
 		}
 		&.active {
-			background-color: $dark-primary-alternate;
+			background: $dark-primary-alternate;
 			color: #fff;
 		}
 	}
 
 	.card-background-1 {
-		background-color: $dark-primary-alternate;
+		background: $dark-primary-alternate;
 	}
 
 	// Components
@@ -187,7 +274,7 @@ $dark-stakes-banned-background: #3e314c;
 		border-top-color: $dark-light;
 		border-bottom-color: $dark-light;
 		border-right-color: $dark-light;
-		background-color: $dark-light;
+		background: $dark-light;
 		color: $labels-dark;
 		&:not([class^="tile tile-type"]) {
 			border-left-color: $dark-light;
@@ -199,11 +286,11 @@ $dark-stakes-banned-background: #3e314c;
 			color: #fff;
 		}
 		.tile-transaction-type-block {
-			background-color: transparent;
+			background: transparent;
 		}
 	}
 	.tile-bottom-contents {
-		background-color: $dark-bg;
+		background: $dark-bg;
 	}
 	a.tile-title {
 		color: #fff !important;
@@ -212,13 +299,13 @@ $dark-stakes-banned-background: #3e314c;
 		color: #fff;
 	}
 	.fade-up-blocks-chain .tile-type-block-animation {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-top-color: $dark-light;
 		border-right-color: $dark-light;
 		border-bottom-color: $dark-light;
 	}
 	.fade-up-blocks-chain .tile-type-block-animation:after {
-		background-color: $dark-light;
+		background: $dark-light;
 	}
 	.cube-animation-title {
 		color: $labels-dark;
@@ -228,7 +315,7 @@ $dark-stakes-banned-background: #3e314c;
 	.tile span[data-address-hash],
 	.tile a[data-test=token_link] { color: $dark-primary; }
 	.fade-up-blocks-chain .tile-type-block-animation .tile-type-line-up {
-		background-color: $dark-primary;
+		background: $dark-primary;
 	}
 	.tile.tile-type-block {
 		border-left-color: $dark-primary
@@ -242,10 +329,10 @@ $dark-stakes-banned-background: #3e314c;
 		border-bottom-color: $dark-primary;
 	}
 	.tile .progress {
-		background-color: rgba(#fff, .2);
+		background: rgba(#fff, .2);
 	}
 	.tile .progress .progress-bar {
-		background-color: $dark-primary;
+		background: $dark-primary;
 	}
 	.tile .tile-title-lg:not([data-balance-change-sign]) {
 		color: $dark-primary;
@@ -254,12 +341,12 @@ $dark-stakes-banned-background: #3e314c;
 	// btns
 
 	.btn-line {
-		background-color: transparent;
+		background: transparent;
 		border-color: $dark-primary;
 		color: $dark-primary;
 		&:hover {
 			border-color: $dark-primary;
-			background-color: $dark-primary;
+			background: $dark-primary;
 			color: #fff;
 		}
 	}
@@ -270,7 +357,7 @@ $dark-stakes-banned-background: #3e314c;
 			fill: $dark-primary;
 		}
 		&:hover {
-			background-color: $dark-primary;
+			background: $dark-primary;
 			path {
 				fill: #fff;
 			}
@@ -281,10 +368,10 @@ $dark-stakes-banned-background: #3e314c;
 	.pagination-container .pagination .page-link {
 		color: $labels-dark;
 		border-color: $dark-light;
-		background-color: $dark-light;
+		background: $dark-light;
 		&:not(.no-hover):hover {
 			color: #fff;
-			background-color: $dark-primary;
+			background: $dark-primary;
 			path {
 				fill: #fff;
 			}
@@ -292,13 +379,13 @@ $dark-stakes-banned-background: #3e314c;
 		&[disabled] {
 			color: $labels-dark;
 			border-color: $dark-light;
-			background-color: $dark-light;
+			background: $dark-light;
 		}
 	}
 
 	// dropdown
 	.dropdown-menu {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-left-color: $dark-light;
 		border-right-color: $dark-light;
 		border-bottom-color: $dark-light;
@@ -307,24 +394,24 @@ $dark-stakes-banned-background: #3e314c;
 	.dropdown-item {
 		color: #fff;
 		&:hover {
-			background-color: rgba(#fff, .1);
+			background: rgba(#fff, .1);
 		}
 	}
 	.dropdown-item.active {
-		background-color: $dark-primary;
+		background: $dark-primary;
 	}
 	.dropdown-item.active.header,	.dropdown-item.header:hover,	.dropdown-item.header:focus {
-		background-color: $dark-light !important;
+		background: $dark-light !important;
 	}
 	.btn-dropdown-line {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-color: $dark-light;
 		color: $labels-dark;
 	}
 
 	// table
 	.stakes-table-head, .stakes-table-th {
-		background-color: $dark-light;
+		background: $dark-light;
 		color: $labels-dark;
 	}
 
@@ -342,7 +429,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	.stakes-tr-banned {
 		.stakes-td {
-			background-color: $dark-stakes-banned-background;
+			background: $dark-stakes-banned-background;
 			border-top: 1px solid $stakes-banned-color;
 			border-bottom-color: $stakes-banned-color;
 
@@ -354,7 +441,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.modal-validator-alert {
-		background-color: $dark-stakes-banned-background;
+		background: $dark-stakes-banned-background;
 		border-top: 1px solid $stakes-banned-color;
 		border-bottom-color: $stakes-banned-color;
 	}
@@ -388,7 +475,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	// api's
 	.api-anchors-list {
-		background-color: $dark-light;
+		background: $dark-light;
 	}
 	.api-doc-list-item {
 		border-bottom-color: darken($labels-dark, 30);
@@ -402,10 +489,10 @@ $dark-stakes-banned-background: #3e314c;
 		color: $dark-primary;
 	}
 	.api-text-monospace-background {
-		background-color: rgba($dark-primary, .15);
+		background: rgba($dark-primary, .15);
 	}
 	.badge.badge-neutral {
-		background-color: rgba($dark-primary, .15);
+		background: rgba($dark-primary, .15);
 		color: $dark-primary;
 	}
 
@@ -419,7 +506,7 @@ $dark-stakes-banned-background: #3e314c;
 		border-top-color: $dark-primary;
     	border-bottom-color: $dark-primary;
 	}
-	.tooltip > .tooltip-inner {background-color: $dark-primary;}
+	.tooltip > .tooltip-inner {background: $dark-primary;}
 
 	.tooltip-pale-color.bs-tooltip-top .arrow::before,
 	.tooltip-pale-color.bs-tooltip-auto[x-placement^="top"] .arrow::before {
@@ -451,7 +538,7 @@ $dark-stakes-banned-background: #3e314c;
 		fill: $labels-dark;
 	}
 	.token-balance-dropdown .dropdown-search-field {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-color: $dark-light;
 		color: #fff;
 		&::placeholder {
@@ -475,7 +562,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	// logs search
 	.logs-search-input, .logs-search-btn, .logs-search-btn-cancel {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-color: $dark-light;
 		color: #fff;
 	}
@@ -486,7 +573,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	.logs-search-btn {
 		&:hover {
-			background-color: $dark-primary;
+			background: $dark-primary;
 			color: #fff;
 		}
 	}
@@ -505,7 +592,7 @@ $dark-stakes-banned-background: #3e314c;
 	// info allert
 	.alert-info {
 		color: $labels-dark;
-		background-color: $dark-light;
+		background: $dark-light;
 		border-color: $dark-light;
 	}
 
@@ -516,8 +603,8 @@ $dark-stakes-banned-background: #3e314c;
 
 	// Contract Verification
 	.new-smart-contract-container {
-		background-color: $dark-light-bg;
-		background-image: linear-gradient(to bottom right, $dark-light 100%, $dark-light 100%);
+		background: $dark-light-bg;
+		background-image: linear-gradient(to bottom right, #772149 100%, #772149 100%);
 		@media (max-width: 991.98px) {
 			background-image: none;
 		}
@@ -534,11 +621,11 @@ $dark-stakes-banned-background: #3e314c;
 	.smart-contract-form-buttons {
 		border-top-color: darken($labels-dark, 30);
 		.btn-no-border {
-			background-color: $dark-light;
+			background: $dark-light;
 			border-color: $dark-light;
 			color: #fff;
 			&:hover {
-				background-color: $dark-primary;
+				background: $dark-primary;
 				color: #fff;
 			}
 		}
@@ -554,20 +641,20 @@ $dark-stakes-banned-background: #3e314c;
 
 	// Form Controlls
 	.form-control {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-color: $dark-light;
 		color: #fff;
 		transition: border-color 0.15s ease-in-out;
 
 		&[readonly] {
-			background-color: $dark-light !important;
+			background: $dark-light !important;
 		}
 
 		&::placeholder {
 			color: $labels-dark;
 		}
 		&:focus {
-			background-color: $dark-light;
+			background: $dark-light;
 			border-color: $dark-primary;
 			color: #fff;
 		}
@@ -584,6 +671,7 @@ $dark-stakes-banned-background: #3e314c;
 	.input-group:not(.input-status-error) .form-control:focus ~ .input-group-prepend.last {
 		.input-group-text {
 		  border-color: $dark-primary;
+		  color: #fff
 		}
 	}
 
@@ -614,9 +702,9 @@ $dark-stakes-banned-background: #3e314c;
 
 	// Content loading placeholders
 	.tile-loader, .table-content-loader {
-		background-color: $dark-bg !important;
+		background: $dark-bg !important;
 		&:before {
-			background: linear-gradient(to right, $dark-bg 2%, lighten($dark-bg, 3) 18%, $dark-bg 33%);
+			background: linear-gradient(to right, #1d1d30 2%, lighten(#1d1d30, 3) 18%, #1d1d30 33%);
 		}
 	}
 
@@ -641,7 +729,7 @@ $dark-stakes-banned-background: #3e314c;
 			fill: $dark-primary;
 		}
 		&:hover {
-			background-color: $dark-primary;
+			background: $dark-primary;
 			svg path {
 				fill: #fff;
 			}
@@ -673,13 +761,13 @@ $dark-stakes-banned-background: #3e314c;
 		}
 
 		.modal-content {
-			background-color: $dark-light-bg;
+			background: $dark-light-bg;
 
 			.btn-primary {
-				background-color: $dark-primary;
+				background: $dark-primary;
 				border-color: $dark-primary;
 				&:hover {
-					background-color: $dark-primary;
+					background: $dark-primary;
 					border-color: $dark-primary;
 				}
 			}
@@ -725,11 +813,11 @@ $dark-stakes-banned-background: #3e314c;
 
 	// Common Buttons
 	.btn-secondary, .button-secondary {
-		background-color: transparent;
+		background: transparent;
 		border-color: $dark-primary;
 		color: $dark-primary;
 		&:hover {
-			background-color: $dark-primary;
+			background: $dark-primary;
 			border-color: $dark-primary;
 			color: #fff;
 		}
@@ -796,13 +884,13 @@ $dark-stakes-banned-background: #3e314c;
 		}
 
 		.modal-content {
-			background-color: $dark-light-bg;
+			background: $dark-light-bg;
 
 			.btn-primary {
-				background-color: $dark-primary;
+				background: $dark-primary;
 				border-color: $dark-primary;
 				&:hover {
-					background-color: $dark-primary;
+					background: $dark-primary;
 					border-color: $dark-primary;
 				}
 			}
@@ -823,7 +911,7 @@ $dark-stakes-banned-background: #3e314c;
 			color: $dark-primary-alternate;
 
 			&:hover {
-				background-color: $dark-primary-alternate;
+				background: $dark-primary-alternate;
 				color: $additional-font;
 			}
 		}
@@ -834,11 +922,11 @@ $dark-stakes-banned-background: #3e314c;
 			color: #fff;
 		}
 		.modal-content {
-			background-color: $dark-light-bg;
+			background: $dark-light-bg;
 		}
 
 		.modal-bottom-disclaimer {
-			background-color: $dark-light;
+			background: $dark-light;
 
 			color: $labels-dark;
 		}
@@ -858,7 +946,7 @@ $dark-stakes-banned-background: #3e314c;
 		}
 
 		.modal-validator-info-content {
-			background-color: $dark-light;
+			background: $dark-light;
 
 			.modal-validator-info-item-value {
 				color: #fff;
@@ -906,7 +994,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.progress-from-to-background {
-		background-color: $dark-bg;
+		background: $dark-bg;
 	}
 
 	.check-tooltip {
@@ -926,11 +1014,11 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.me-tooltip {
-		background-color: $labels-dark;
+		background: $labels-dark;
 		color: $dark-light-bg;
 
 		&:hover {
-			background-color: $dark-primary;
+			background: $dark-primary;
 		}
 	}
 
@@ -940,7 +1028,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.alert-danger {
-		background-color: $dark-light;
+		background: $dark-light;
 		border-color: $dark-light;
 		.alert-link {
 			color: $alert-danger-color;
@@ -965,7 +1053,7 @@ $dark-stakes-banned-background: #3e314c;
 		&[disabled] {
 			&,
 			&:hover {
-			  background-color: $dark-primary;
+			  background: $dark-primary;
 			  border-color: $dark-primary;
 			}
 		}
@@ -981,7 +1069,7 @@ $dark-stakes-banned-background: #3e314c;
 
     .bs-label.validator,
     .bs-label.destination-eth {
-        background-color: $labels-dark;
+        background: $labels-dark;
     }
 
 	.dropdown-item {
@@ -1006,7 +1094,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	.tooltip-inversed-color {
 		.tooltip-inner {
-			background-color: $btn-line-color !important;
+			background: $btn-line-color !important;
 			color: #fff !important;
 		}
 	}
@@ -1033,7 +1121,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.stakes-top {
-		background-color: $dark-bg;
+		background: $dark-bg;
 		background-image: none;
 	}
 
@@ -1049,42 +1137,46 @@ $dark-stakes-banned-background: #3e314c;
 		  }
 	}
 	.main-search-autocomplete {
-		background-color: $dark-bg !important;
+		background: $dark-primary !important;
 		color: #fff !important;
+		&::placeholder{
+			color: #fff !important;
+		}
 	}
 	.autocomplete-category {
 		color: #fff !important;
 	}
 	ul[id^='autoComplete_list_'] {
-		background-color: $dark-light-bg !important;
+		background: $dark-primary !important;
 	}
 	li[id^='autoComplete_result_'] {
-		background-color: $dark-light-bg !important;
+		background: $dark-primary !important;
 		color: #fff !important;
 
 		&:hover {
-			background-color: $dark-primary !important;
+			background: $dark-primary !important;
 		}
 		&[aria-selected="true"] {
-			background-color: $dark-primary !important;
+			background: $dark-primary !important;
 		}
 	}
 }
 
+
 .navbar-dark .navbar-toggler {
-	color: rgba(255, 255, 255, 0.5);
+	color: #ffffff80;
 	border: none;
 }
 
 .dark-theme-applied .dropdown-item {
-	background-color: $dark-light !important;
+	background: $dark-light !important;
 	color: #fff !important;
 }
 
 .dark-theme-applied .dropdown-item.active:not(.header), .dark-theme-applied .dropdown-item:not(.header):hover, .dark-theme-applied .dropdown-item:not(.header):focus {
     background-image: none;
     width: 100%;
-    background-color: #3f426c !important;
+    background: #3f426c !important;
 }
 
 @media (max-width: 991.98px) {
@@ -1093,7 +1185,7 @@ $dark-stakes-banned-background: #3e314c;
 	.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:focus {
 		background-image: none;
 		width: 100%;
-		background-color: #35335d !important;
+		background: #35335d !important;
 		color: white;
 		border: none;
 	}
