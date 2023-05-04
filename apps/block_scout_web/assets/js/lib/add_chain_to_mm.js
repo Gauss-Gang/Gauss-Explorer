@@ -24,7 +24,7 @@ export async function addChainToMM ({ btn }) {
       await window.ethereum.request({
         method: 'wallet_addEthereumChain',
         params: [{
-          chainId: '0x1092',
+          chainId: '0x5AC',
           chainName: 'Gauss Induction Labs', 
           nativeCurrency: {
             name: 'GANG',
